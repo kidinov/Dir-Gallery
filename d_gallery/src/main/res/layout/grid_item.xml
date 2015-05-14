@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/progress"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_margin="70dip"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Europe's Leaders Fear Libya Could Become Next Afghanistan"
+            android:singleLine="true"
+            android:gravity="center_horizontal|bottom"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textStyle="normal"/>
+
+
+        <ImageView
+            android:id="@+id/tb"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/play_video"/>
+    </LinearLayout>
+
+</RelativeLayout>

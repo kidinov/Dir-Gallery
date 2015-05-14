@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill path to directory"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/path"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:enabled="true"
+            android:singleLine="true"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/sdcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdcard"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="images"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="video"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_traverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="traverse"
+        android:checked="false"/>
+
+    <CheckBox
+        android:id="@+id/cb_down_sampling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use down sampling"
+        android:checked="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show media by that path"
+        android:id="@+id/start"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
